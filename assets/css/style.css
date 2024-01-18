@@ -1,0 +1,380 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+/*
+
+Red Rose
+
+*/
+
+:root {
+    --primary-background-color: #f9fafb;
+    --secondary-background-color: #f8f8f9;
+    --tertiary-background-color: #f1f2f3;
+    --fff-background-color: #e5e5e5;
+    --text-color: #181919;
+    --image-invert: 100%;
+    color-scheme: light
+}
+
+.dark-theme {
+    --primary-background-color: #151519;
+    --secondary-background-color: #19191d;
+    --tertiary-background-color: #1c1c21;
+    --fff-background-color: #222228;
+    --text-color: #e4e4e4;
+    --image-invert: 0%;
+    color-scheme: dark
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+button:focus {
+    outline: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "Inter";
+    transition: all 0.1s linear;
+    background-color: var(--primary-background-color)
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: unset !important
+}
+
+.naturalLink:hover {
+    text-decoration: underline
+}
+
+@media only screen and (min-width: 640px) {
+    #head {
+        padding-top: 5em
+    }
+
+    .section {
+        padding-top: 5em;
+        padding-bottom: 5em
+    }
+
+    .sectionGrid {
+        display: grid;
+        grid-template-columns: auto auto
+    }
+
+    .sectionGridItemRight {
+        justify-self: end
+    }
+
+    .blackText {
+        font-size: 55px;
+    }
+
+    .footerLeft {
+        float: left
+    }
+
+    .footerRight {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #head {
+        padding-top: 4em
+    }
+
+    .section {
+        padding-top: 4em;
+        padding-bottom: 4em
+    }
+
+    .sectionGridItemRight {
+        padding-top: 1em
+    }
+
+    .blackText {
+        font-size: 40px;
+        float: center;
+        text-align: center
+    }
+
+    #weatherText {
+        float: center;
+        text-align: center
+    }
+
+    .footer {
+        text-align: center;
+        float: center
+    }
+
+    #centeredButton {
+        text-align: center
+    }
+
+    #headAvatar {
+        margin-top: 2rem
+    }
+}
+
+.tippy-box[data-theme~=ws] {
+    color: var(--text-color);
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
+.blackText {
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.boldText {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500
+}
+
+.normalText {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: normal
+}
+
+.smallText {
+    color: var(--text-color);
+    font-size: 15.5px;
+    font-weight: normal
+}
+
+.thinText {
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: normal
+}
+
+.coloredText {
+    background-image: linear-gradient(to right, #00b47e, #00a2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 100vh
+}
+
+#goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    border-radius: 999%;
+    font-size: 18px;
+    transform: scale(1);
+    width: 45px;
+    height: 45px;
+    color: var(--text-color);
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
+#goTop:hover {
+    background: var(--tertiary-background-color)
+}
+
+.navGrid {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.navGridItemRight {
+    justify-self: end
+}
+
+#navbarImage {
+    filter: invert(var(--image-invert))
+}
+
+.navbarButton {
+    width: 45px;
+    height: 45px;
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    border-radius: 999%
+}
+
+.navbarButton:hover {
+    background: var(--tertiary-background-color)
+}
+
+.bigButton {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    padding: 10px
+}
+
+.bigButton:hover {
+    background: var(--tertiary-background-color);
+    color: var(--text-color) !important
+}
+
+.card {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
+.card:hover {
+    background: var(--tertiary-background-color);
+    color: var(--text-color) !important
+}
+
+.sectionTopRightText {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: none;
+    border-right: none;
+    background-color: var(--fff-background-color)
+}
+
+.cardNoMT {
+    margin-top: -15px
+}
+
+.githubCard {
+    cursor: pointer
+}
+
+.textCard {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    padding: 7px 13px
+}
+
+#headAvatarContainer {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+#headAvatar {
+    width: 230px;
+    height: 230px;
+    object-fit: cover
+}
+
+.discordStatusOnline {
+    width: 31px;
+    height: 31px;
+    border-radius: 999%;
+    background-color: #3ba55d;
+    border: 5px solid var(--primary-background-color);
+    bottom: 0;
+    right: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.discordStatusDnd {
+    width: 31px;
+    height: 31px;
+    border-radius: 999%;
+    background-color: #ed4245;
+    border: 5px solid var(--primary-background-color);
+    bottom: 0;
+    right: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.discordStatusIdle {
+    width: 31px;
+    height: 31px;
+    border-radius: 999%;
+    background-color: #faa81a;
+    border: 5px solid var(--primary-background-color);
+    bottom: 0;
+    right: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.discordStatusOffline {
+    width: 31px;
+    height: 31px;
+    border-radius: 999%;
+    background-color: #747f8d;
+    border: 5px solid var(--primary-background-color);
+    bottom: 0;
+    right: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.svgInvert {
+    fill: var(--text-color)
+}
+
+.leftFloat {
+    float: left;
+    text-align: left
+}
+
+.rightFloat {
+    float: right;
+    text-align: right
+}
+
+.bigButton,
+.card,
+button,
+.textCard {
+    box-shadow: var(--theme-box-shadow)
+}
+
+.rounded-custom {
+    border-radius: 8px;
+}
+
+.rounded-custom-strt {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px
+  }
