@@ -1,0 +1,18 @@
+{
+    "name": "Yigit – Self-taught web developer.",
+    "lang": "en",
+     "theme_color": "#f9fafb",
+     "background_color": "#f9fafb",
+     "display": "standalone",
+     "orientation": "portrait",
+     "scope": "/",
+     "start_url": "/",
+    "icons": [
+     {
+      "src": "assets/img/iconBlack.png",
+      "sizes": "512x512",
+      "type": "image\/png",
+      "density": "5.0"
+     }
+    ]
+}
